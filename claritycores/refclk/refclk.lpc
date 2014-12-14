@@ -2,7 +2,7 @@
 Family=ecp5um
 OperatingCondition=COM
 Package=CABGA756
-PartName=LFE5UM-85F-7BG756CES
+PartName=LFE5UM-85F-7BG756C
 PartType=LFE5UM-85F
 SpeedGrade=7
 Status=C
@@ -11,11 +11,11 @@ CoreName=EXTREF
 CoreRevision=1.1
 CoreStatus=Demo
 CoreType=LPM
-Date=10/27/2014
-ModuleName=refclk_inst
+Date=11/30/2014
+ModuleName=refclk
 ParameterFileVersion=1.0
 SourceFormat=verilog
-Time=13:17:22
+Time=18:17:01
 VendorName=Lattice Semiconductor Corporation
 [Parameters]
 Destination=Synplicity
