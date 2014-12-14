@@ -1,6 +1,6 @@
-module wiggle (clk, rstn, led, gpio, perstn, refclkp, refclkn, hdinp0, hdinn0, hdoutp0, hdoutn0);
+module wiggle (osc, rstn, led, gpio, perstn, refclkp, refclkn, hdinp0, hdinn0, hdoutp0, hdoutn0);
 
-input clk, rstn;
+input osc, rstn;
 output [7:0] led;
 output [23:0] gpio;
 input perstn, refclkp, refclkn, hdinp0, hdinn0;
@@ -10,10 +10,12 @@ reg [23:0] count;
 reg [7:0] sreg;
 reg shift;
 wire rstn;
+wire clk;
 wire [7:0] led;
 wire [23:0] gpio;
 
 assign rst = ~rstn;
+assign clk = osc;
 
 always @(posedge clk or posedge rst)
 begin
