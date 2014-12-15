@@ -1,0 +1,28 @@
+<Project ModBy="Inserter" SigType="0" Name="Z:/Source/ecp5dev_wiggle/reveal_pcie.rvl" Date="2014-12-14">
+    <IP Version="1_5_062609"/>
+    <Design DesignEntry="Schematic/Mixed HDL" Synthesis="synplify" DeviceFamily="ECP5UM" DesignName="ecp5_wiggle"/>
+    <Core InsertDataset="0" Insert="1" Reveal_sig="2065515846" Name="wiggle_LA0" ID="0">
+        <Setting>
+            <Clock SampleClk="_inst/pcie_x1_sys_clk_125" SampleEnable="0" EnableClk="" EnableClk_Pri="0"/>
+            <TraceBuffer Implementation="0" BitTimeStamp="0" hasTimeStamp="0" IncTrigSig="1" BufferDepth="2048"/>
+            <Capture Mode="0" MinSamplesPerTrig="8"/>
+            <POR TriggerEnable="1" EnableSignal="perstn" EnablePolarity="0" NumberOfTrigger="1"/>
+            <Event CntEnable="0" MaxEventCnt="8"/>
+            <TrigOut Polarity="0" MinPulseWidth="0" TrigOutNetType="1" EnableTrigOut="0" TrigOutNet="reveal_debug_wiggle_LA0_net"/>
+        </Setting>
+        <Dataset Name="Base">
+            <Trace>
+                <Sig Type="SIG" Name="_inst/pcie_x1_dl_up"/>
+            </Trace>
+            <Trigger>
+                <TU Operator="0" Serialbits="0" Type="0" Name="TU1" ID="1" Sig="(BUS)_inst/pcie_x1_phy_ltssm_state[3:0]," Value="0001" Radix="0"/>
+                <TU Operator="0" Serialbits="0" Type="0" Name="TU2" ID="2" Sig="(BUS)_inst/pcie_x1_inst/rxp_data[7:0],_inst/pcie_x1_inst/rxp_data_k,_inst/pcie_x1_inst/rxp_elec_idle,_inst/pcie_x1_inst/rxp_polarity,(BUS)_inst/pcie_x1_inst/rxp_status[2:0],(BUS)_inst/pcie_x1_inst/txp_data[7:0],_inst/pcie_x1_inst/txp_data_k,_inst/pcie_x1_inst/txp_elec_idle,_inst/pcie_x1_inst/txp_compliance," Value="0000000000000000000000000" Radix="0"/>
+                <TU Operator="0" Serialbits="0" Type="0" Name="TU3" ID="3" Sig="_inst/pcie_x1_inst/rx_st_vc0,(BUS)_inst/pcie_x1_inst/rx_data_vc0[15:0],_inst/pcie_x1_inst/rx_end_vc0," Value="000000000000000000" Radix="0"/>
+                <TU Operator="0" Serialbits="0" Type="0" Name="TU4" ID="4" Sig="_inst/pcie_x1_inst/tx_st_vc0,(BUS)_inst/pcie_x1_inst/tx_data_vc0[15:0],_inst/pcie_x1_inst/tx_end_vc0," Value="000000000000000000" Radix="0"/>
+                <TU Operator="0" Serialbits="0" Type="0" Name="TU5" ID="5" Sig="(BUS)_inst/pcie_x1_inst/rx_bar_hit[6:0]," Value="0000000" Radix="0"/>
+                <TU Operator="0" Serialbits="0" Type="0" Name="TU6" ID="6" Sig="_inst/pcie_x1_inst/tx_rdy_vc0," Value="0" Radix="0"/>
+                <TE MaxSequence="1" MaxEvnCnt="1" Expression="TU1" Name="TE1" ID="1" Resource="1"/>
+            </Trigger>
+        </Dataset>
+    </Core>
+</Project>

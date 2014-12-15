@@ -18,6 +18,9 @@
         <Source name="ecp5_wiggle/ecp5_wiggle.xcf" type="Programming Project File" type_short="Programming">
             <Options/>
         </Source>
+        <Source name="reveal_pcie.rvl" type="Reveal" type_short="Reveal">
+            <Options/>
+        </Source>
     </Implementation>
     <Strategy name="Strategy1" file="ecp5_wiggle1.sty"/>
 </BaliProject>
